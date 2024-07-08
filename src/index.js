@@ -6,6 +6,7 @@ import App from './App';
 import { UserProvider } from './contexts/user.context';
 import { CategoriesProvider } from './contexts/categories.context';
 import { CartProvider } from './contexts/cart.context';
+import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 
 import './index.scss';
 import reportWebVitals from './reportWebVitals';
@@ -29,3 +30,5 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+serviceWorkerRegistration.register()
